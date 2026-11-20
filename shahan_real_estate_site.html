@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>املاک شاهان | خانه‌ای برای امروز، سرمایه‌ای برای فردا</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap');
+:root{--bg:#0c0c0c;--panel:#151515;--gold:#c8a45d;--gold2:#e3c47e;--text:#f5f1e9;--muted:#a9a39a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Vazirmatn,Tahoma,sans-serif}a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:9;background:#101010eF;border-bottom:1px solid #28241d;backdrop-filter:blur(10px)}
+.nav{max-width:1180px;margin:auto;padding:16px 22px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:22px}.brandmark{width:42px;height:42px;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold);font-size:23px;border-radius:11px}
+nav{display:flex;gap:24px;color:#ddd;font-size:14px}nav a:hover{color:var(--gold)}
+.btn{border:1px solid var(--gold);background:var(--gold);color:#17130b;border-radius:8px;padding:11px 18px;font-family:inherit;font-weight:700;cursor:pointer}.btn.outline{background:transparent;color:var(--gold)}
+.hero{min-height:540px;max-width:1180px;margin:auto;padding:70px 22px 48px;display:grid;grid-template-columns:1.05fr .95fr;gap:38px;align-items:center}
+.hero-img{height:430px;border-radius:18px;background:linear-gradient(0deg,#0009,#0000),url('https://images.unsplash.com/photo-1600601650571-9c7f5c2c1c5d?auto=format&fit=crop&w=1400&q=85') center/cover;box-shadow:0 25px 70px #0008;position:relative}
+.hero-img:after{content:"SHOHAN REAL ESTATE";position:absolute;bottom:22px;left:22px;color:#ffffffb9;letter-spacing:4px;font-size:11px}
+.eyebrow{color:var(--gold);font-size:14px;letter-spacing:.5px}.hero h1{font-size:clamp(34px,4.2vw,57px);line-height:1.45;margin:15px 0;font-weight:800}.hero h1 span{color:var(--gold2)}.hero p{color:var(--muted);line-height:2;font-size:16px;max-width:530px}.actions{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+.searchbox{max-width:1136px;margin:-12px auto 48px;background:var(--panel);border:1px solid #29251e;border-radius:14px;padding:20px;display:grid;grid-template-columns:repeat(4,1fr) auto;gap:12px}
+.searchbox label{font-size:12px;color:var(--muted);display:block;margin-bottom:7px}.searchbox select{width:100%;background:#0f0f0f;color:#eee;border:1px solid #303030;border-radius:8px;padding:12px;font:inherit}
+.section{max-width:1180px;margin:0 auto;padding:18px 22px 65px}.sectionhead{display:flex;align-items:end;justify-content:space-between;margin-bottom:22px;gap:16px}.section h2{font-size:27px;margin:5px 0}.sectionhead p{color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--panel);border:1px solid #272727;border-radius:13px;overflow:hidden;transition:.2s}.card:hover{transform:translateY(-4px);border-color:#65512d}.photo{height:210px;background-size:cover;background-position:center;position:relative}.tag{position:absolute;top:14px;right:14px;background:var(--gold);color:#1b160d;border-radius:5px;padding:5px 10px;font-size:12px;font-weight:700}.cardbody{padding:17px}.card h3{margin:0 0 9px;font-size:17px}.location{color:var(--muted);font-size:13px}.price{color:var(--gold2);font-weight:800;font-size:18px;margin:15px 0}.facts{display:flex;gap:16px;border-top:1px solid #292929;padding-top:13px;color:#c4c0b8;font-size:13px}
+.about{background:linear-gradient(115deg,#191610,#111);border:1px solid #2a251c;border-radius:16px;padding:35px;display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}.about p{line-height:2;color:var(--muted)}.aboutbadge{border:1px solid var(--gold);border-radius:12px;padding:26px;text-align:center;color:var(--gold);font-size:24px;font-weight:800}
+footer{border-top:1px solid #27231d;background:#101010;padding:34px 22px;color:var(--muted)}.foot{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot strong{color:var(--gold)}
+@media(max-width:850px){nav{display:none}.hero{grid-template-columns:1fr;padding-top:40px}.hero-img{height:320px;order:-1}.searchbox{margin:0 16px 35px;grid-template-columns:1fr 1fr}.cards{grid-template-columns:1fr 1fr}.about{grid-template-columns:1fr}}
+@media(max-width:540px){.cards{grid-template-columns:1fr}.searchbox{grid-template-columns:1fr}.hero h1{font-size:34px}.nav{padding:13px 16px}.sectionhead{align-items:start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header><div class="nav">
+<a class="brand" href="#"><span class="brandmark">ش</span><span>املاک شاهان</span></a>
+<nav><a href="#">خانه</a><a href="#listings">املاک</a><a href="#buy">خرید</a><a href="#rent">رهن و اجاره</a><a href="#about">درباره ما</a><a href="#contact">تماس</a></nav>
+<a href="#contact" class="btn">مشاوره رایگان</a>
+</div></header>
+<main>
+<section class="hero">
+<div><div class="eyebrow">مشاور مطمئن برای انتخابی بزرگ</div><h1>خانه‌ای برای امروز،<br><span>سرمایه‌ای برای فردا</span></h1><p>با املاک شاهان، مسیر پیدا کردن خانه یا سرمایه‌گذاری مناسب را مطمئن‌تر و ساده‌تر طی کنید. انتخابی آگاهانه، همراه با مشاوره‌ای حرفه‌ای.</p><div class="actions"><a class="btn" href="#listings">مشاهده املاک</a><a class="btn outline" href="#contact">درخواست مشاوره</a></div></div>
+<div class="hero-img" role="img" aria-label="نمای یک خانه مدرن"></div>
+</section>
+<div class="searchbox">
+<div><label>نوع معامله</label><select id="deal"><option value="">همه</option><option>خرید</option><option>رهن و اجاره</option></select></div>
+<div><label>نوع ملک</label><select id="kind"><option value="">همه املاک</option><option>آپارتمان</option><option>خانه</option><option>زمین</option><option>ویلا</option></select></div>
+<div><label>منطقه</label><select id="area"><option value="">همه مناطق</option><option>مرکز شهر</option><option>شمال شهر</option><option>جنوب شهر</option></select></div>
+<div><label>حداکثر قیمت</label><select id="max"><option value="">بدون محدودیت</option><option value="3000000000">۳ میلیارد تومان</option><option value="5000000000">۵ میلیارد تومان</option><option value="10000000000">۱۰ میلیارد تومان</option></select></div>
+<button class="btn" onclick="filterHomes()">جستجوی ملک</button>
+</div>
+<section class="section" id="listings">
+<div class="sectionhead"><div><div class="eyebrow">منتخب شاهان</div><h2>ملک‌های پیشنهادی</h2><p>چند نمونه از فایل‌های منتخب برای شروع جستجو</p></div><a class="outline" href="#contact" style="color:var(--gold)">همه آگهی‌ها ←</a></div>
+<div class="cards" id="cards">
+<article class="card" data-deal="خرید" data-kind="آپارتمان" data-area="مرکز شهر" data-price="4200000000"><div class="photo" style="background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80')"><span class="tag">فروش</span></div><div class="cardbody"><h3>آپارتمان مدرن و نورگیر</h3><div class="location">📍 مرکز شهر · فایل نمونه</div><div class="price">۴٫۲ میلیارد تومان</div><div class="facts"><span>📐 ۱۲۵ متر</span><span>🛏 ۳ خواب</span><span>🚿 ۲ حمام</span></div></div></article>
+<article class="card" data-deal="خرید" data-kind="ویلا" data-area="شمال شهر" data-price="8500000000"><div class="photo" style="background-image:url('https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=900&q=80')"><span class="tag">فروش</span></div><div class="cardbody"><h3>ویلای دلباز با طراحی خاص</h3><div class="location">📍 شمال شهر · فایل نمونه</div><div class="price">۸٫۵ میلیارد تومان</div><div class="facts"><span>📐 ۲۴۰ متر</span><span>🛏 ۴ خواب</span><span>🌳 حیاط</span></div></div></article>
+<article class="card" data-deal="رهن و اجاره" data-kind="آپارتمان" data-area="جنوب شهر" data-price="1800000000"><div class="photo" style="background-image:url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80')"><span class="tag">رهن و اجاره</span></div><div class="cardbody"><h3>آپارتمان خوش‌نقشه</h3><div class="location">📍 جنوب شهر · فایل نمونه</div><div class="price">۱٫۸ میلیارد تومان رهن</div><div class="facts"><span>📐 ۹۰ متر</span><span>🛏 ۲ خواب</span><span>🏢 ۴ طبقه</span></div></div></article>
+</div>
+</section>
+<section class="section" id="about"><div class="about"><div><div class="eyebrow">اعتماد، تخصص، همراهی</div><h2>درباره املاک شاهان</h2><p>در املاک شاهان، تلاش می‌کنیم با شناخت دقیق نیاز شما، مشاوره روشن و پیگیری مسئولانه، تجربه‌ای بهتر برای خرید، فروش و اجاره ملک فراهم کنیم. مجموعه ساختمانی شاهان سورن صددروازه، همراه شما در انتخاب و ساخت آینده‌ای مطمئن.</p><a class="btn" href="#contact">ارتباط با ما</a></div><div class="aboutbadge">شاهان<br><small style="font-size:14px;font-weight:400">انتخابی هوشمندانه برای خانه و سرمایه</small></div></div></section>
+</main>
+<footer id="contact"><div class="foot"><div><strong>املاک شاهان</strong><br>خانه‌ای برای امروز، سرمایه‌ای برای فردا</div><div>تماس و مشاوره<br><span>شماره تماس و آدرس را اینجا وارد کنید</span></div><div>© املاک شاهان · تمامی حقوق محفوظ است</div></div></footer>
+<script>
+function filterHomes(){const deal=document.getElementById('deal').value,kind=document.getElementById('kind').value,area=document.getElementById('area').value,max=document.getElementById('max').value;let count=0;document.querySelectorAll('#cards .card').forEach(c=>{let ok=(!deal||c.dataset.deal===deal)&&(!kind||c.dataset.kind===kind)&&(!area||c.dataset.area===area)&&(!max||Number(c.dataset.price)<=Number(max));c.style.display=ok?'':'none';if(ok)count++});document.getElementById('listings').scrollIntoView({behavior:'smooth'});if(!count)alert('ملکی با این فیلترها در فایل‌های نمونه پیدا نشد.');}
+</script>
+</body></html>
